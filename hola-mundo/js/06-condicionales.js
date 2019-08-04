@@ -27,3 +27,23 @@ if(edad>=18){
 }else{
     console.log(nombre+" es menor de edad");
 }
+/*
+and (Y): &&
+or (O): ||
+Negacion: !
+*/
+var year=2018;
+if (year>=2000 && year<=2020 && year!=2018){
+    console.log('Estamos en la era actual');
+}else{
+    console.log('Estamos en la era post moderna o estamos en el anho 2018');
+}
+
+//or
+if(year==2008 || (year>=2018 && year==2028)){
+    console.log('El anho acaba en 8');
+}else{
+    console.log('anho no registrado')
+}
+
+
