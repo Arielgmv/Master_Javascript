@@ -40,3 +40,23 @@ seccion.append(hr);
 //});
 //console.log(contenidoEnTexto);
 //Conseguir elementos por su clase
+var divsRojos=document.getElementsByClassName('rojo');
+var divsAmarillos=document.getElementsByClassName('amarillo');
+console.log(divsAmarillos);
+divsAmarillos[0].style.background="yellow";
+/*divsRojos[0].style.background="red";
+divsRojos[1].style.background="red";*/
+var div;
+for (div in divsRojos){
+    if (divsRojos[div].className=="rojo") {
+        divsRojos[div].style.background="red";    
+    }    
+}
+//console.log(divsRojos);
+
+// Query selector
+var id=document.querySelector("#encabezado");
+console.log(id);
+
+var claseRojo=document.querySelector(".rojo");
+console.log(claseRojo);
