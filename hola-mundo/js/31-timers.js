@@ -18,7 +18,7 @@ window.addEventListener('load', function(){
     stop.addEventListener("click", function(){
         alert("Has parado el intervalo en bucle");
         clearInterval(tiempo);
-    
+    });
     var start=document.querySelector("#start");
     start.addEventListener("click", function(){
         alert("Has iniciado el intervalo en bucle");
