@@ -18,11 +18,14 @@ window.addEventListener('load', () => {
         //Click
         boton.addEventListener('click', function () {
             cambiarColor();
+            boton.style.border = "10px solid black";
         });
         
         //Mouse over
         boton.addEventListener('mouseover', function () {
-            boton.style.background="yellow";
+            //boton.style.background="yellow";
+            console.log(this);
+            this.style.background="yellow";
         });
         
         //Mouseout
