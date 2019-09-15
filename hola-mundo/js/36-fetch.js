@@ -24,6 +24,19 @@ var div_janet = document.querySelector("#janet");
         return fetch('https://reqres.in/api/users/2');
     }
 
+    function getInfo() {
+        var profesor = {
+            nombre: 'Victor',
+            apellidos: 'Robles',
+            url: 'https://victorroblesweb.es'
+        };
+        
+        return new Promise((resolve, reject) =>{
+            var profesor_string = JSON.stringify(profesor);
+            if (typeof profesor_string !='string') return reject('error');
+        });        
+    }
+
     function listadoUsuarios(usuarios) {
     usuarios.map((users, i) => {
         let nombre = document.createElement('h3');
