@@ -1,6 +1,7 @@
 'use strict';
 //Fetch (ajax) y peticiones a servicios / apis rest
 var div_usuarios = document.querySelector("#usuarios");
+var div_profesor = document.querySelector("#profesor");
 var div_janet = document.querySelector("#janet");
 
 //Fetch hace peticiones asincronas a un servidor
@@ -8,19 +9,23 @@ var div_janet = document.querySelector("#janet");
     .then(data => data.json())
     .then(users =>{
         listadoUsuarios(users.data);
-        
-        return getJanet();
+                
+        return getInfo();
     })
+    .then(data => {
+        div_profesor.innerHTML = data;
+        return getJanet();
+     })
     .then(data => data.json())
     .then(user =>{
-        mostrarJanet(user.data);
+        mostrarJanet(user.data);       
     });
 
-    function getUsuarios(params) {
+    function getUsuarios() {
         return fetch('https://reqres.in/api/users');
     }
 
-    function getJanet(params) {
+    function getJanet() {
         return fetch('https://reqres.in/api/users/2');
     }
 
@@ -32,8 +37,12 @@ var div_janet = document.querySelector("#janet");
         };
         
         return new Promise((resolve, reject) =>{
-            var profesor_string = JSON.stringify(profesor);
-            if (typeof profesor_string !='string') return reject('error');
+            var profesor_string = "";
+            setTimeout(function(){
+                profesor_string = JSON.stringify(profesor);
+                if (typeof profesor_string !='string' || profesor_string =='') return reject('error');
+                return resolve(profesor_string);
+            }, 3000);
         });        
     }
 
