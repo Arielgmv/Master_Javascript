@@ -17,4 +17,15 @@ $(document).ready(function(){
         console.log("Click dado!!");
         $(this).addClass('zebra');
     })
+    //Selectores de etiqueta, pointer da la forma de dedo al
+    //cursor al pasar por encima
+    var parrafos = $('p').css("cursor", "pointer");
+    parrafos.click(function(){
+        var that = $(this);
+        if (!that.hasClass('grande')) {
+            that.addClass('grande');    
+        }else{
+            that.removeClass('grande');
+        }       
+    });
 });
