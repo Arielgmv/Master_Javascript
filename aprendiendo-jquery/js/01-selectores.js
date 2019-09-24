@@ -28,4 +28,19 @@ $(document).ready(function(){
             that.removeClass('grande');
         }       
     });
+
+    //Selectores de atributo
+    $('[title="Google"]').css('background', '#ccc');
+    $('[title="Facebook"]').css('background','blue')
+                            .css('color','white');
+
+    //Otros
+    $('p, a').addClass('margen-superior');
+
+    var busqueda = $("#caja").find('.resaltado');
+    console.log(busqueda);
+
+    //con parent vamos saltando de una etiqueta a otra
+    var busqueda1 = $("#caja .resaltado").eq(0).parent().parent().parent().find('[title="Google"]');
+    console.log(busqueda1);
 });
