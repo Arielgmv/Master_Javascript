@@ -38,11 +38,34 @@ $(document).ready(function(){
         console.log("[blur] Estas fuera del input");
     });*/
     var nombre = $("#nombre");
+    var datos = $("#datos"); 
+
     nombre.focus(function(){
         $(this).css("border", "3px solid green");
     });
     nombre.blur(function(){
         $(this).css("border", "1px solid #ccc");
-        $("#datos").text($(this).val()).show();
+        datos.text($(this).val()).show();
+    });
+
+    //Mousedown y mouseup
+    datos.mousedown(function(){
+        $(this).css("border-color", "yellow");
+    });
+
+    datos.mouseup(function(){
+        $(this).css("border-color", "blue");
+    });
+
+    //Mousemove
+    $(document).mousemove(function(){
+        $("span").text(event.pageX + ", " + event.pageY);
+    });
+    $(document).mousemove(function(){
+        console.log("En X: "+event.clientX);
+        console.log("En Y: "+event.clientY);
+        $('body').css("cursor","none");
+        $("#sigueme").css("left",event.clientX)
+                     .css("top",event.clientY);
     });
 });
