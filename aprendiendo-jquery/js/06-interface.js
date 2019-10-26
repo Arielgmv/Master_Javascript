@@ -19,4 +19,8 @@ $(document).ready(function(){
             console.log("Has soltado algo dentro del area");
         }
     });
+    //Efectos
+    $('#mostrar').click(function(){
+        $('.caja-efectos').toggle('shake', 4000);
+    });
 });
