@@ -1,2 +1,2 @@
-ng server (iniciar angular)
+ng serve (iniciar angular)
 ng generate component cursos (generar un componente)
