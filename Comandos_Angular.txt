@@ -13,3 +13,5 @@ ng new aprendiendo-angular
 
 ng serve (iniciar angular)
 ng generate component cursos (generar un componente)
+ng g component externo (generar un componente)
+
