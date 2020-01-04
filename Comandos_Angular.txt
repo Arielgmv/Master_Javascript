@@ -15,3 +15,10 @@ ng serve (iniciar angular)
 ng generate component cursos (generar un componente)
 ng g component externo (generar un componente)
 
+** error TS2307: Cannot find module 'rxjs-compat/Observable'
+npm install --save rxjs-compat
+
+**npm audit fix (fix vulnerabilities)
+
+
+

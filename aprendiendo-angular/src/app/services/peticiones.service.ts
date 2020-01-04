@@ -1,7 +1,7 @@
-import { Injectable, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-import { Observable } from 'rxjs';
+
 
 @Injectable()
 export class PeticionesService{
@@ -12,7 +12,7 @@ export class PeticionesService{
     ){
         this.url = "https://reqres.in/";
     }
-    getUser(): Observable<any>{
-        return this._http.get(this.url+'api/users/2');
+    getUser(userId): Observable<any>{
+        return this._http.get(this.url+'api/users/'+userId);
     }
 }
