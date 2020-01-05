@@ -16,9 +16,11 @@ ng generate component cursos (generar un componente)
 ng g component externo (generar un componente)
 
 ** error TS2307: Cannot find module 'rxjs-compat/Observable'
-npm install --save rxjs-compat
+npm install --save rxjs-compat  (instala esta nueva dependencia)
 
 **npm audit fix (fix vulnerabilities)
+
+**Browserslist: caniuse-lite is outdated. Please run next command `npm update`
 
 
 
