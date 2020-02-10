@@ -39,5 +39,5 @@ for (var i=1; i<=10; i++) {
     calculadora(i, 8);
 }
 */
-calculadora(3, 5);
-calculadora(6, 7, true);
+calculadora(3, 5, true);
+calculadora(6, 7);
