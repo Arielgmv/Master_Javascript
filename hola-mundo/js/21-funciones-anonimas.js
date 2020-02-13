@@ -1,6 +1,6 @@
 'use strict'
 //funciones anónimas
-//Es una función que no tienen nombre
+//Es una función que no tiene nombre
 /*var pelicula=function(nombre){
     return 'La película es: '+nombre;
 }*/

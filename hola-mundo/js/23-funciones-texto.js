@@ -21,7 +21,7 @@ console.log('**************************************');
 var nombre='Ariel';
 console.log(nombre.length);
 console.log('**************************************');
-var array=['primer','segundo']
+var array=['primer','segundo', 'tercero']
 console.log(array);
 console.log('**************************************');
 //concatenar - unir textos

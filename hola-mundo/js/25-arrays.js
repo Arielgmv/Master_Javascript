@@ -43,3 +43,9 @@ lenguajes.forEach((elemento, indice)=>{
     document.write('<li>'+indice+' - '+elemento+'</li>');
 });
 document.write('</ul>');
+
+document.write('<ul>');
+nombres.forEach((elemento)=>{
+    document.write('<li>'+elemento+'</li>');
+});
+document.write('</ul>');
