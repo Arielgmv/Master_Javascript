@@ -6,6 +6,7 @@ var cine=[categorias, peliculas];
 console.log(cine);
 console.log(cine[0][2]);
 console.log(cine[1][2]);
+document.write(cine);
 //añadimos elementos al array con push
 //peliculas.push('Batman');
 //console.log(peliculas);
@@ -18,11 +19,11 @@ while (elemento!='ACABAR');
 //pop elimina el último elemento del array
 peliculas.pop();
 console.log(peliculas);*/
-//convertir arrar a texto
+//convertir array a texto
 var peliculas_string=peliculas.join();
 console.log(peliculas_string);
 
-var cadena='texto1, texto2, texto3';
+var cadena='texto1, texto2, texto3, texto4';
 //convertir cadena de texto a array
 var cadena_array=cadena.split(', ');
 console.log(cadena_array);
