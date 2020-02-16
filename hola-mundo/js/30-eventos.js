@@ -3,7 +3,7 @@
 
 window.addEventListener('load', () => {
     function cambiarColor() {
-        //console.log('Me has dado click');
+        console.log('Me has dado click');
         var bg=boton.style.background;
         if (bg=="green") {
             boton.style.background="red";

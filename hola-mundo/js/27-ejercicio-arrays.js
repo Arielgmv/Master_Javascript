@@ -40,7 +40,8 @@ mostrarArray(numeros);
 //mostrar array en la consola
 console.log(numeros);
 //ordenar y mostrar
-numeros.sort(function(a, b){return a-b});
+//numeros.sort(function(a, b){return a-b});
+numeros.sort();
 console.log(numeros);
 mostrarArray(numeros, ' ordenado');
 //Invertir y mostrar

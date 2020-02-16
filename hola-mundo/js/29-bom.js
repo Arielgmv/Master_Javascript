@@ -15,3 +15,6 @@ function abrirVentana(url) {
     window.open(url,"","width=400,height=300");
 }
 getBom();
+//redirect("https://developer.mozilla.org/es/docs/Web/API/URL/URL");
+//abrirVentana("https://developer.mozilla.org/es/docs/Web/API/URL/URL");
+document.write("Screen width: " + screen.width);

@@ -8,12 +8,12 @@ function cambiaColor(color){
 //var caja=document.getElementById("micaja");
 //en css #=id ; .=class; sin nada=nombre de la etiqueta
 var caja=document.querySelector("#micaja");
-caja.innerHTML="Texto en la caja desde JS";
-caja.style.background="red";
-caja.style.padding="20px";
-cambiaColor("black");
-caja.className="hola";
-//console.log(caja);
+caja.innerHTML="Test de Texto en la caja desde JS";
+caja.style.background="brown";
+caja.style.padding="10px";
+cambiaColor("yellow");
+caja.className="hola1";
+console.log(caja);
 
 //Conseguir elementos por su etiqueta
 var todosLosDivs=document.getElementsByTagName('div');
@@ -52,7 +52,7 @@ for (div in divsRojos){
         divsRojos[div].style.background="red";    
     }    
 }
-//console.log(divsRojos);
+console.log(divsRojos);
 
 // Query selector
 var id=document.querySelector("#encabezado");
