@@ -9,7 +9,7 @@ window.addEventListener('load', function(){
             }else{
                 encabezado.style.fontSize = "50px";
             }
-        }, 1000);
+        }, 2000);
         return tiempo;      
     }
     var tiempo=intervalo();

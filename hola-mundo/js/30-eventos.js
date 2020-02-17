@@ -36,7 +36,12 @@ window.addEventListener('load', () => {
         //Focus
         var input=document.querySelector("#campo_nombre");
         input.addEventListener('focus', function () {
-            console.log("[focus] Estas dentro del input");
+            //boton.style.background="blue";
+            console.log("[focus] Estas dentro del input");            
+        });
+
+        input.addEventListener('click', function () {
+            this.style.background="yellow";
         });
         
         //Blur
