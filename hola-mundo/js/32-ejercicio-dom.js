@@ -10,10 +10,10 @@ window.addEventListener('load', function () {
         var nombre = document.querySelector("#nombre").value;   
         var apellidos = document.querySelector("#apellidos").value;
         var edad = parseInt(document.querySelector("#edad").value);
-        console.log(edad);
+        console.log(edad);        
         if (nombre.trim() == null || nombre.trim().length == 0) {
             alert("El nombre no es válido");
-            document.querySelector("#error_nombre").innerHTML = "El nombre no es válido";
+            document.querySelector("#error_nombre").innerHTML = "El nombre no es válido";            
             return false;
         }else{
             document.querySelector("#error_nombre").style.display = "none";

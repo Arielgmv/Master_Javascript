@@ -5,11 +5,19 @@ var pelicula = {
     year: 2017,
     pais: 'Estados Unidos'
 }
-pelicula.titulo = "Superman Begins";
+
+var pelicula1 = {
+    titulo: 'Lord of the Rings',
+    year: '2003',
+    pais: 'New Zeland'
+}
+
+pelicula.year = 2020;
 
 var peliculas = [
     {titulo: "La verdad duele", year: 2016, pais: "Francia"},
-    pelicula
+    pelicula,
+    pelicula1
 ]
 
 console.log(pelicula);
