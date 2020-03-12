@@ -12,16 +12,26 @@ var pelicula1 = {
     pais: 'New Zeland'
 }
 
-pelicula.year = 2020;
+var pelicula2 = {
+    titulo: 'Fast and Furious',
+    year: '2020',
+    pais: 'USA',
+    ciudad: 'New York'
+}
+
+pelicula.year = 2021;
+pelicula2.year = 2015;
 
 var peliculas = [
     {titulo: "La verdad duele", year: 2016, pais: "Francia"},
     pelicula,
-    pelicula1
+    pelicula1,
+    pelicula2
 ]
 
 console.log(pelicula);
 console.log(peliculas);
+
 var caja_peliculas = document.querySelector("#peliculas");
 var index;
 for(index in peliculas){
